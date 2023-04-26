@@ -47,3 +47,24 @@ body
 {
   direction: rtl;
 }
+.swiper-button-next,.swiper-button-prev
+{
+  color: rgb(255, 255, 255) !important;
+  transition: all ease-out 0.3s;
+}
+.swiper-pagination-bullet-active
+{
+  background-color: rgb(255, 255, 255) !important;
+}
+.swiper-pagination-bullet
+{
+  background-color: #ffff !important;
+}
+.swiper-button-prev:hover
+{
+  color: rgb(255, 85, 0) !important;
+}
+.swiper-button-next:hover
+{
+  color: rgb(255, 85, 0) !important;
+}
