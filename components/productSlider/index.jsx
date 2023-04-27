@@ -8,7 +8,7 @@ import {IoIosArrowForward} from 'react-icons/io';
 import ArticleSection from "../articleSection/index";
 
 
-const ProductSlider = () => {
+const ProductSlider = ({title}) => {
 
     const carouselRef = useRef()
     const carouselSwitcher = (data) => {
@@ -27,7 +27,7 @@ const ProductSlider = () => {
             <div className="w-full flex justify-between">
                 <div className="flex items-center gap-2">
                     <div className="h-full w-[2px] bg-orange-300"></div>
-                    <h1 className="text-white text-lg">اپلیکیشن ها</h1>
+                    <h1 className="text-white text-lg">{title}</h1>
                 </div>
                 <div className="flex gap-4">
                     <div className="flex gap-2">

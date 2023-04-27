@@ -8,8 +8,9 @@ export default function Home() {
     <main>
       <Header/>
       <MainSlider/>
-      <ProductSlider/>
+      <ProductSlider title={'اپلیکیشن ها'}/>
       <MainBanner/>
+      <ProductSlider title={'کتاب ها'}/>
     </main>
   )
 }
