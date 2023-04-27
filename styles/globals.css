@@ -82,3 +82,11 @@ body
 {
   scroll-snap-align: start;
 }
+.GraphicCategories
+{
+  width: calc(25% - 10px);
+} 
+.GraphicCategories:hover
+{
+  text-shadow: 1px 1px 3px black;
+}

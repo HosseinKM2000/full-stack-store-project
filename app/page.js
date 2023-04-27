@@ -2,6 +2,7 @@ import Header from "<store>/components/header";
 import MainSlider from '../components/mainSlider/index';
 import ProductSlider from '../components/productSlider/index.jsx';
 import MainBanner from "<store>/components/mainBanner/index";
+import GraphicCates from "<store>/components/graphicCates";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <ProductSlider title={'اپلیکیشن ها'}/>
       <MainBanner/>
       <ProductSlider title={'کتاب ها'}/>
+      <GraphicCates/>
     </main>
   )
 }
