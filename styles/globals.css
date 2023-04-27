@@ -68,3 +68,17 @@ body
 {
   color: rgb(255, 85, 0) !important;
 }
+.scroll-None::-webkit-scrollbar
+{
+  width: 0px;
+  height: 0px;
+}
+.sliderContainer_1
+{
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+.slider_item
+{
+  scroll-snap-align: start;
+}
