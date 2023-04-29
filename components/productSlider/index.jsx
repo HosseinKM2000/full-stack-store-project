@@ -5,7 +5,7 @@ import { useRef } from "react";
 import ImgPro from '../../public/img/productSlider/ganj.jpg'
 import {IoIosArrowBack} from 'react-icons/io';
 import {IoIosArrowForward} from 'react-icons/io';
-import ArticleSection from "../articleSection/index";
+import ArticleSection from "./articleSection/index";
 
 
 const ProductSlider = ({title}) => {
@@ -37,6 +37,7 @@ const ProductSlider = ({title}) => {
                     <button type="button" className="py-1 px-2 border-2 border-white bg-orange-500 text-white transition-all duration-500 hover:bg-[#d95900] rounded-md">دیدن همه</button>
                 </div>
             </div>
+            {/* products */}
             <div ref={carouselRef} className="w-full overflow-x-scroll scroll-None sliderContainer_1 transition-all duration-500">
              <div className="flex gap-5 w-fit">
                 <ArticleSection Img={ImgPro}/>

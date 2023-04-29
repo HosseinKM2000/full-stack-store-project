@@ -3,6 +3,8 @@ import MainSlider from '../components/mainSlider/index';
 import ProductSlider from '../components/productSlider/index.jsx';
 import MainBanner from "<store>/components/mainBanner/index";
 import GraphicCates from "<store>/components/graphicCates";
+import GraphicFilesSlider from "<store>/components/graphicFilesSlider";
+import LatestArticle from "<store>/components/latestArticle";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <MainBanner/>
       <ProductSlider title={'کتاب ها'}/>
       <GraphicCates/>
+      <GraphicFilesSlider/>
+      <LatestArticle/>
     </main>
   )
 }
