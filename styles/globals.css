@@ -23,6 +23,7 @@ html
 {
   text-align: right;
   direction: rtl;
+  scroll-behavior: smooth;
 }
 body
 {

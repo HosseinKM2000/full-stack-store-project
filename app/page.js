@@ -5,6 +5,7 @@ import MainBanner from "<store>/components/mainBanner/index";
 import GraphicCates from "<store>/components/graphicCates";
 import GraphicFilesSlider from "<store>/components/graphicFilesSlider";
 import LatestArticle from "<store>/components/latestArticle";
+import Footer from "<store>/components/footer/Footer";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <GraphicCates/>
       <GraphicFilesSlider/>
       <LatestArticle/>
+      <Footer/>
     </main>
   )
 }
