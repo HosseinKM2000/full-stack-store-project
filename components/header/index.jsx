@@ -48,7 +48,7 @@ const Header = () => {
                       <li><Link href={'/'} className="w-28 h-10 bg-[#ededed] text-sm font-black  rounded-md flex justify-center items-center transition-all duration-300 hover:bg-orange-400 hover:text-white">اپلیکیشن ها</Link></li>
                       <li><Link href={'/'} className="w-28 h-10 bg-[#ededed] text-sm font-black  rounded-md flex justify-center items-center transition-all duration-300 hover:bg-orange-400 hover:text-white">کتاب ها</Link></li>
                       <li><Link href={'/'} className="w-28 h-10 bg-[#ededed] text-sm font-black  rounded-md flex justify-center items-center transition-all duration-300 hover:bg-orange-400 hover:text-white">فایل های گرافیکی</Link></li>
-                      <li><Link href={'/'} className="w-28 h-10 bg-[#ededed] text-sm font-black  rounded-md flex justify-center items-center transition-all duration-300 hover:bg-orange-400 hover:text-white">وبلاگ</Link></li>
+                      <li><Link href={'/'} className="w-28 h-10 bg-[#ededed] text-sm font-black  rounded-md flex justify-center items-center transition-all duration-300 hover:bg-orange-400 hover:text-white">مقالات</Link></li>
                     </ul>
                   </nav>
                   <div className="flex flex-col items-end gap-3">
