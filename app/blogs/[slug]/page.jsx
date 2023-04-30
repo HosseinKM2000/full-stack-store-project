@@ -8,7 +8,7 @@ import DependentArticle from "<store>/components/dependentArticle";
 
 const SingleBlog = () => {
     return (
-        <article className="flex flex-col px-5 items-center w-full">
+        <article className="flex flex-col pl-5 items-center w-full">
             <div className="flex w-full ">
               <BreadCrumb secondTitle={'مقالات'} secondLink={'/blogs'}/>
             </div>

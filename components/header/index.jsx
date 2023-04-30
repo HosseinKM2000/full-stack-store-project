@@ -69,8 +69,8 @@ const Header = () => {
                 {/* botton */}
                 <div className="flex items-center w-full justify-between pr-2">
                   <div className="flex relative justify-start w-[70%] items-center gap-5 search-box-main">
-                    <input className="w-full h-full outline-none border-none placeholder:text-sm shadow-[0px_0px_3px_rgba(0,0,0,0.25)] focus:shadow-[0px_0px_10px_1px_rgba(0,0,0,0.25)] px-3 py-4" type="text" name="search" placeholder="جستجو بین محصولات ..."/>
-                    <SlMagnifier className="scale-2 left-4 absolute  text-gray-700 hover:text-orange-700"/>
+                    <input className="w-full h-full outline-none border-none transition-all duration-300 placeholder:text-sm shadow-[0px_0px_3px_rgba(0,0,0,0.25)] focus:shadow-[0px_0px_10px_1px_rgba(0,0,0,0.25)] px-3 py-4" type="search" name="search" placeholder="جستجو بین محصولات ..."/>
+                    <SlMagnifier className="scale-2 left-4 absolute bg-white text-gray-700 hover:text-orange-700"/>
                   </div>
                   <div className="flex gap-4">
                     <Link href={'/'} className="py-3 px-4 rounded-md bg-gray-400 text-white hover:bg-gray-500 transition-all duration-700 flex items-center">
