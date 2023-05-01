@@ -1,4 +1,5 @@
 'use client'
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from '../../public/img/logo.png'; 
@@ -9,12 +10,18 @@ import {TbArrowBigUpFilled} from 'react-icons/tb';
 
 const Footer = () => {
 
+    const [ScrollY,setScrollY] = useState(window.pageYOffset);
+
     const goTopCtrl = () => {
         window.scrollTo({
         top: 0,
         behavior: "smooth",
              });
           }; 
+    window.addEventListener('scroll',(e) => {
+        setScrollY(window.pageYOffset)
+    })
+
 
     return (
         <footer className="flex flex-col px-10 mt-[7rem] gap-16 pb-5">
@@ -49,7 +56,9 @@ const Footer = () => {
             </div>
             <div className="flex w-full justify-between">
                 <span className="text-sm font-bold">تمامی حقوق مادی و معنوی این وب سایت مطعلق به مرن فا می باشد</span>
-                <button type="button" className="p-2 rounded-md transition-all duration-500  hover:bg-yellow-400  bg-yellow-500 text-gray-900" onClick={()=> goTopCtrl()}><TbArrowBigUpFilled/></button>
+                {
+                 ScrollY <= 500 ? null : <button type="button" className="fixed left-3 bottom-3 p-2 rounded-md transition-all duration-500  hover:bg-yellow-400  bg-yellow-500 text-gray-900 shadow-[0px_0px_5px_rgba(0,0,0,0.8)]" onClick={()=> goTopCtrl()}><TbArrowBigUpFilled/></button>
+                }
             </div>
         </footer>
     );

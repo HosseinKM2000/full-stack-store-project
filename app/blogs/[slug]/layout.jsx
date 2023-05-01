@@ -8,9 +8,9 @@ const BlogLayout = ({children}) => {
     return (
         <>
         <Header/>
-        <div className="flex justify-between w-full px-5 items-start container mx-auto my-5">
+        <div className="flex justify-between w-full px-5 items-start container mx-auto my-8">
             <main className="w-[70%]">{children}</main>
-            <aside className="w-[30%] flex flex-col gap-8 max-w-[30%] min-h-screen p-4 rounded-md bg-white">
+            <aside className="w-[30%] flex flex-col gap-8 max-w-[30%] min-h-screen p-4 pt-10 rounded-md bg-white">
                 <form action="">
                     <div className="w-full h-11 bg-white justify-end  items-center relative flex articles_saerch_box">
                       <input type="search" className="outline-none transition-all duration-500 focus:shadow-[0px_0px_10px_1px_rgba(0,0,0,0.25)] shadow-[0px_0px_5px_rgba(0,0,0,0.25)] border-0 p-1 w-full h-full text-right bg-transparent" name="" id="" placeholder="...جستجو در وبلاگ ها"/>

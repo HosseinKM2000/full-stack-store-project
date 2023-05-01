@@ -12,7 +12,7 @@ const GraphicFile = ({Img}) => {
     return (
         <article className="flex flex-col slider_item transition-all duration-500 hover:shadow-[0px_1px_10px_rgba(0,0,0,0.5)] w-[14rem] bg-white rounded-lg px-3 py-4 overflow-hidden hover:translate-y-[-0.2rem]">
          <Link href={'/'}><Image src={Img} alt="product" className="rounded-md w-full h-36 transition-all duration-300 hover:brightness-110"/></Link>
-          <Link href={'/'} className="font-bold my-8 hover:text-gray-400 transition-all duration-500 line-clamp-2">صفحه ساز المنتور ورد پرس بهتر از کامپوزر</Link>
+          <Link href={'/'} className="font-bold my-5 hover:text-gray-400 transition-all duration-500 line-clamp-2">صفحه ساز المنتور ورد پرس بهتر از کامپوزر</Link>
           <div className="flex flex-col w-full text-[#48509b]">
             <div className="w-full flex justify-between text-sm">
                 <div className="flex gap-1">
@@ -42,7 +42,7 @@ const GraphicFile = ({Img}) => {
                 </div>
             </div>
          </div>
-         <div className="flex flex-wrap gap-2 text-sm mb-5 mt-8">
+         <div className="flex flex-wrap gap-2 text-sm mb-2 mt-5">
             <Link href={'/'} className="hover:bg-gray-300 transition-all duration-500 bg-gray-200 my-1 p-1 rounded-sm">فتوشاپ</Link>
             <Link href={'/'} className="hover:bg-gray-300 transition-all duration-500 bg-gray-200 my-1 p-1 rounded-sm">ایلوستریتور</Link>
           </div>
