@@ -11,10 +11,10 @@ const ProductLayout = ({children}) => {
             <main className="w-[75%]">{children}</main>
             <aside className="w-[25%] flex flex-col gap-8 max-w-[30%] min-h-screen pt-12 rounded-md bg-white">
                 <form className="flex flex-col items-center gap-5">
-                    <button type="button" className="flex px-2 py-2 justify-center rounded-md w-full text-center bg-orange-500 text-white text-sm ">
+                    <button type="button" className="flex px-2 py-2 justify-center rounded-md w-full text-center transition-all duration-300 hover:bg-orange-600  bg-orange-500 text-white text-sm ">
                       <bdi>2,000,000</bdi>تومان-افزودن به سبد خرید 
                     </button>
-                    <button type="button" className="px-2 py-2 rounded-md bg-blue-500 text-white w-full text-center text-sm">افزودن به علاقه مندی ها</button>
+                    <button type="button" className="px-2 py-2 rounded-md transition-all duration-300 hover:bg-blue-600 bg-blue-500 text-white w-full text-center text-sm">افزودن به علاقه مندی ها</button>
                 </form>
                 <section className="flex flex-col gap-5 p-3 w-full rounded-md shadow-[0px_0px_10px_rgba(0,0,0,0.25)]">
                     <div className="w-full flex justify-between">
@@ -37,12 +37,12 @@ const ProductLayout = ({children}) => {
                 <section className="flex items-start flex-col gap-3 p-3 w-full rounded-md shadow-[0px_0px_10px_rgba(0,0,0,0.25)]">
                     <h4 className="text-gray-900">برچسب ها</h4>
                     <div className="flex justify-start text-sm gap-1 flex-wrap">
-                        <span className="p-1 bg-gray-200 rounded-md">فایل گرافیکی</span>
-                        <span className="p-1 bg-gray-200 rounded-md">فایل گرافیکی</span>
-                        <span className="p-1 bg-gray-200 rounded-md">فایل گرافیکی</span>
-                        <span className="p-1 bg-gray-200 rounded-md">فایل گرافیکی</span>
-                        <span className="p-1 bg-gray-200 rounded-md">فایل گرافیکی</span>
-                        <span className="p-1 bg-gray-200 rounded-md">فایل گرافیکی</span>
+                        <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">فایل گرافیکی</span>
+                        <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">فایل گرافیکی</span>
+                        <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">فایل گرافیکی</span>
+                        <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">فایل گرافیکی</span>
+                        <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">فایل گرافیکی</span>
+                        <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">فایل گرافیکی</span>
                     </div>
                 </section>
                 <form action="" className="flex flex-col gap-5 p-3 rounded-md shadow-[0px_0px_10px_rgba(0,0,0,0.25)]">
