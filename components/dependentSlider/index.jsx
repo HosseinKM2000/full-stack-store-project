@@ -5,7 +5,7 @@ import {IoIosArrowForward} from 'react-icons/io';
 import {IoIosArrowBack} from 'react-icons/io';
 import { useRef } from 'react';
 
-const DependentArticle = () => {
+const DependentSlider = ({ title }) => {
 
     
     const carouselRef = useRef()
@@ -24,7 +24,7 @@ const DependentArticle = () => {
         {/* head slide */}
         <div className="w-full flex justify-between">
             <div className="flex items-center gap-2">
-                <h1 className="text-gray-500 font-bold text-lg">مقالات مرتبط</h1>
+                <h1 className="text-gray-500 font-bold text-lg">{title}</h1>
             </div>
             <div className="flex gap-4">
                 <div className="flex gap-2">
@@ -48,4 +48,4 @@ const DependentArticle = () => {
     );
 }
 
-export default DependentArticle;
+export default DependentSlider;
