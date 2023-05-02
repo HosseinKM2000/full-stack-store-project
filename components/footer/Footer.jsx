@@ -34,18 +34,18 @@ const Footer = () => {
                     <div>
                         <h2  className="font-bold text-lg mb-3">دسترسی سریع</h2>
                         <ul className="flex flex-col gap-2 text-sm">
-                            <Link href={'/'} className="flex transition-all duration-300 hover:text-orange-500"><IoIosArrowBack/><li className="hover:translate-x-[-5px] transition-all duration-300">درباره ما</li></Link>
-                            <Link href={'/'} className="flex transition-all duration-300 hover:text-orange-500"><IoIosArrowBack/><li className="hover:translate-x-[-5px] transition-all duration-300">وبلاگ</li></Link>
-                            <Link href={'/'} className="flex transition-all duration-300 hover:text-orange-500"><IoIosArrowBack/><li className="hover:translate-x-[-5px] transition-all duration-300">حریم خصوصی</li></Link>
-                            <Link href={'/'} className="flex transition-all duration-300 hover:text-orange-500"><IoIosArrowBack/><li className="hover:translate-x-[-5px] transition-all duration-300">تماس با ما</li></Link>
+                            <Link href={'/about'} className="flex transition-all duration-300 hover:text-orange-500"><IoIosArrowBack/><li className="hover:translate-x-[-5px] transition-all duration-300">درباره ما</li></Link>
+                            <Link href={'/blogs'} className="flex transition-all duration-300 hover:text-orange-500"><IoIosArrowBack/><li className="hover:translate-x-[-5px] transition-all duration-300">وبلاگ</li></Link>
+                            <Link href={'/help'} className="flex transition-all duration-300 hover:text-orange-500"><IoIosArrowBack/><li className="hover:translate-x-[-5px] transition-all duration-300">حریم خصوصی</li></Link>
+                            <Link href={'/contact'} className="flex transition-all duration-300 hover:text-orange-500"><IoIosArrowBack/><li className="hover:translate-x-[-5px] transition-all duration-300">تماس با ما</li></Link>
                         </ul>
                     </div>
                     <div>
                         <h3 className="font-bold text-lg mb-3">راهنمای خرید</h3>
                         <ul className="flex flex-col gap-2 text-sm">
-                            <Link href={'/'} className="flex transition-all duration-300 hover:text-orange-500"><IoIosArrowBack/><li className="hover:translate-x-[-5px] transition-all duration-300">سوالات متداول</li></Link>  
-                            <Link href={'/'} className="flex transition-all duration-300 hover:text-orange-500"><IoIosArrowBack/><li className="hover:translate-x-[-5px] transition-all duration-300">چگونه خرید کنم؟</li></Link>
-                            <Link href={'/'} className="flex transition-all duration-300 hover:text-orange-500"><IoIosArrowBack/><li className="hover:translate-x-[-5px] transition-all duration-300">قوانین استفاده از محصولات</li></Link>
+                            <Link href={'/help'} className="flex transition-all duration-300 hover:text-orange-500"><IoIosArrowBack/><li className="hover:translate-x-[-5px] transition-all duration-300">سوالات متداول</li></Link>  
+                            <Link href={'/help'} className="flex transition-all duration-300 hover:text-orange-500"><IoIosArrowBack/><li className="hover:translate-x-[-5px] transition-all duration-300">چگونه خرید کنم؟</li></Link>
+                            <Link href={'/help'} className="flex transition-all duration-300 hover:text-orange-500"><IoIosArrowBack/><li className="hover:translate-x-[-5px] transition-all duration-300">قوانین استفاده از محصولات</li></Link>
                         </ul>
                     </div>
                 </div>
