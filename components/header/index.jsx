@@ -76,7 +76,7 @@ const Header = () => {
                     <Link href={'/'} className="py-3 px-4 rounded-md bg-gray-400 text-white hover:bg-gray-500 transition-all duration-700 flex items-center">
                       <FaUser className="scale-[1.5]"/>
                     </Link>
-                    <Link href={'/'} className="flex hover:bg-orange-500 transition-all duration-700  gap-2 text-white bg-orange-400 rounded-md items-center p-2">
+                    <Link href={'/cart'} className="flex hover:bg-orange-500 transition-all duration-700  gap-2 text-white bg-orange-400 rounded-md items-center p-2">
                       <div className="bg-white w-7 h-7 text-orange-400 rounded-[50%] px-1 flex justify-center items-center ">0</div>
                       <span>سبد خرید</span>
                       <div className="bg-white p-2 text-orange-400 rounded-md hover:text-orange-900 transition-all duration-700">
