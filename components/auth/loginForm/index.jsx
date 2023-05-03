@@ -31,7 +31,7 @@ const LoginForm = () => {
                 type="email"
                 autoComplete='email'
                 placeholder='ایمیل'
-                className='outline-none rounded-md w-[15rem] p-1 border-1 border-zinc-400 transition-all focus:border-orange-400'
+                className='outline-none rounded-md w-[15rem] p-1 border-1 border border-zinc-400 transition-all focus:border-orange-400'
                 {
                     ...register('email', {
                         required:true,
