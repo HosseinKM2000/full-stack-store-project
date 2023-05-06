@@ -48,7 +48,7 @@ const Header = () => {
                       <li><Link href={'/'} className="w-28 h-10 bg-[#ededed] text-sm font-black  rounded-md flex justify-center items-center transition-all duration-300 hover:bg-orange-400 hover:text-white">اپلیکیشن ها</Link></li>
                       <li><Link href={'/'} className="w-28 h-10 bg-[#ededed] text-sm font-black  rounded-md flex justify-center items-center transition-all duration-300 hover:bg-orange-400 hover:text-white">کتاب ها</Link></li>
                       <li><Link href={'/'} className="w-28 h-10 bg-[#ededed] text-sm font-black  rounded-md flex justify-center items-center transition-all duration-300 hover:bg-orange-400 hover:text-white">فایل های گرافیکی</Link></li>
-                      <li><Link href={'/'} className="w-28 h-10 bg-[#ededed] text-sm font-black  rounded-md flex justify-center items-center transition-all duration-300 hover:bg-orange-400 hover:text-white">مقالات</Link></li>
+                      <li><Link href={'/blogs'} className="w-28 h-10 bg-[#ededed] text-sm font-black  rounded-md flex justify-center items-center transition-all duration-300 hover:bg-orange-400 hover:text-white">مقالات</Link></li>
                     </ul>
                   </nav>
                   <div className="flex flex-col items-end gap-3">
@@ -73,7 +73,7 @@ const Header = () => {
                     <SlMagnifier className="scale-2 left-4 absolute bg-white text-gray-700 hover:text-orange-700"/>
                   </div>
                   <div className="flex gap-4">
-                    <Link href={'/'} className="py-3 px-4 rounded-md bg-gray-400 text-white hover:bg-gray-500 transition-all duration-700 flex items-center">
+                    <Link href={'/account'} className="py-3 px-4 rounded-md bg-gray-400 text-white hover:bg-gray-500 transition-all duration-700 flex items-center">
                       <FaUser className="scale-[1.5]"/>
                     </Link>
                     <Link href={'/cart'} className="flex hover:bg-orange-500 transition-all duration-700  gap-2 text-white bg-orange-400 rounded-md items-center p-2">
