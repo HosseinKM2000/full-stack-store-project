@@ -20,8 +20,8 @@ const MainDashboard = () => {
 
     return (
         <div className="flex w-full">
-            <DashboardCtrl setContent={setContent}/>
-            <div className='w-[80%]'>
+            <DashboardCtrl setContent={setContent} content={content}/>
+            <div className='w-[80%] p-5'>
                 {details}
             </div>
         </div>
