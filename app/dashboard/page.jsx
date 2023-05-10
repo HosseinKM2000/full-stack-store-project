@@ -1,12 +1,9 @@
-import DashboardCtrl from "<store>/components/dashboard/dashboardCtrl";
+import MainDashboard from "<store>/components/dashboard/mainDashboard";
 
 const Contact = () => {
     return (
         <div className="flex w-full">
-            <aside className="">
-                <DashboardCtrl/>
-            </aside>
-            <div></div>
+            <MainDashboard/>
         </div>
     );
 }
