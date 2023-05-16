@@ -23,7 +23,7 @@ const NewMidBanner = () => {
     }
     return (
         <div className="w-full flex flex-col justify-start">
-            <h1 className="text-2xl font-bold rounded-t-md bg-gray-300 w-fit px-2 py-1 text-gray-500">بنر جدید</h1>
+            <h1 className="text-xl font-bold rounded-t-md bg-gray-300 w-fit px-2 py-1 text-gray-500">بنر جدید</h1>
             <form onSubmit={submiter} className="flex flex-col gap-8 w-full bg-gray-300 py-5 px-2">
                 <div className="w-full flex flex-col gap-1">
                     <label htmlFor="imgAddress">آدرس عکس</label>
