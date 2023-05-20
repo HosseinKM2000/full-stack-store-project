@@ -18,6 +18,7 @@ const Footer = () => {
         behavior: "smooth",
              });
           }; 
+
     window.addEventListener('scroll',(e) => {
         setScrollY(window.pageYOffset)
     })

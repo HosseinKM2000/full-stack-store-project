@@ -8,6 +8,7 @@ const AllMidBanners = ({setCtrlId}) => {
     const [banners,setBanners] = useState([]);
     const [pageNumber,setPageNumber] = useState(1);
     const [numberOfBtn,setNumberOfBtn] = useState([1]);
+    const numSync = 10
     const goTopCtrl = () => {
         window.scrollTo({
         top: 0,
@@ -16,10 +17,10 @@ const AllMidBanners = ({setCtrlId}) => {
           }; 
 
     useEffect(()=>{
-        axios.get(`https://shoping-file.iran.liara.run/api/middle-banners?pn=${pageNumber}`)
+        axios.get(`https://shoping-file.iran.liara.run/api/middle-banners?pn=${pageNumber}&num=${numSync}`)
         .then(res => {
             setBanners(res.data.GoalMidBans)
-            setNumberOfBtn(Array.from(Array(Math.ceil(res.data.AllMidBansNum/2)).keys()))
+            setNumberOfBtn(Array.from(Array(Math.ceil(res.data.AllMidBansNum/numSync)).keys()))
         })
         .catch(err => console.error('this is error in get all banners =>',err))
     },[pageNumber])
@@ -42,7 +43,7 @@ const AllMidBanners = ({setCtrlId}) => {
             {
                 numberOfBtn.map((number,index) => (
                     <>
-                     <button key={index} className="py-1 px-3 bg-cyan-600 text-white rounded-md" onClick={()=>{
+                     <button key={index} className="py-1 px-3 transition-all hover:bg-orange-600 duration-300 bg-cyan-600 text-white rounded-md" onClick={()=>{
                         setPageNumber(number+1);
                         setBanners([]);
                         goTopCtrl();

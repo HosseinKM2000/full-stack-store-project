@@ -25,7 +25,10 @@ const NewMidBanner = () => {
         }
         const url = 'https://shoping-file.iran.liara.run/api/new-middle-banner';
         axios.post(url,formData)
-        .then(res => console.log('data send ok'))
+        .then(res => {
+            console.log('data send ok')
+            alert('banner added')
+        })
         .catch(err => console.error('this is post error => ',err))
     }
 
