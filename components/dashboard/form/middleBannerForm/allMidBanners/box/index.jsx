@@ -1,8 +1,9 @@
+'use client'
 import Image from "next/image";
 
-const BoxBanner = ({data}) => {
+const BoxBanner = ({data, setId}) => {
     return (
-        <div className="flex w-full items-end justify-between shadow-[0px_0px_10px_rgba(0,0,0,0.3)] p-5 transition-all duration-300 hover:bg-orange-200">
+        <div onClick={()=>{setId(data._id)}} className="flex w-full cursor-pointer items-end justify-between shadow-[0px_0px_10px_rgba(0,0,0,0.3)] p-5 transition-all duration-300 hover:bg-orange-200">
             <Image src={`/${data.image}`} alt={data.alt} width={500} height={500} className="w-[40%] h-full rounded-lg"/>
             <div className="flex gap-2 text-sm">
                 {

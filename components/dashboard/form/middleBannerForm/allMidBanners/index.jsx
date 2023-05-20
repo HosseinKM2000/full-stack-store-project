@@ -4,22 +4,25 @@ import axios from "axios";
 import BoxBanner from "./box";
 import Image from "next/image";
 
-const AllMidBanners = () => {
+const AllMidBanners = ({setCtrlId}) => {
     const [banners,setBanners] = useState([]);
-    const [middleBannersNum,setMiddleBannersNum] = useState(1);
     const [pageNumber,setPageNumber] = useState(1);
     const [numberOfBtn,setNumberOfBtn] = useState([1]);
+    const goTopCtrl = () => {
+        window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+             });
+          }; 
 
     useEffect(()=>{
         axios.get(`https://shoping-file.iran.liara.run/api/middle-banners?pn=${pageNumber}`)
         .then(res => {
             setBanners(res.data.GoalMidBans)
-            setMiddleBannersNum(res.data.AllMidBansNum)
-            setNumberOfBtn(Array.from(Array(res.data.AllMidBansNum).keys()))
+            setNumberOfBtn(Array.from(Array(Math.ceil(res.data.AllMidBansNum/2)).keys()))
         })
         .catch(err => console.error('this is error in get all banners =>',err))
     },[pageNumber])
-
 
     return (
         <section className="w-full flex flex-col items-start">
@@ -31,7 +34,22 @@ const AllMidBanners = () => {
                     <Image alt="loading" width={120} height={120} src={'/img/loading.svg'}/>
                  </div>
                 : banners.map((banner,index) => (
-                    <BoxBanner data={banner} key={index}/>
+                    <BoxBanner data={banner} setId={setCtrlId} key={index}/>
+                ))
+            }
+          </div>
+          <div className="w-full flex justify-center gap-3 mt-10">
+            {
+                numberOfBtn.map((number,index) => (
+                    <>
+                     <button key={index} className="py-1 px-3 bg-cyan-600 text-white rounded-md" onClick={()=>{
+                        setPageNumber(number+1);
+                        setBanners([]);
+                        goTopCtrl();
+                     }}>
+                        {number+1}
+                     </button>
+                    </>
                 ))
             }
           </div>

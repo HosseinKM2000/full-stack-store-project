@@ -8,6 +8,13 @@ const NewMidBanner = () => {
     const imageAltRef = useRef();
     const imageLinkRef = useRef();
     const imageSituationRef = useRef();
+
+    const formKeyNotSuber = (e) => {
+        if(e.key === 'Enter')
+        {
+            e.preventDefault();
+        }
+    }
     const submiter = (e) => {
         e.preventDefault()
         const formData = {
@@ -21,10 +28,13 @@ const NewMidBanner = () => {
         .then(res => console.log('data send ok'))
         .catch(err => console.error('this is post error => ',err))
     }
+
+
+
     return (
         <div className="w-full flex flex-col justify-start">
             <h1 className="text-xl font-bold rounded-t-md bg-gray-300 w-fit px-2 py-1 text-gray-500">بنر جدید</h1>
-            <form onSubmit={submiter} className="flex flex-col gap-8 w-full bg-gray-300 py-5 px-2">
+            <form onKeyDown={formKeyNotSuber} onSubmit={submiter} className="flex flex-col gap-8 w-full bg-gray-300 py-5 px-2">
                 <div className="w-full flex flex-col gap-1">
                     <label htmlFor="imgAddress">آدرس عکس</label>
                     <input ref={imageUrlRef} type="text" name="imgAddress"  className="outline-none p-1 focus:border border-gray-700 "/>
