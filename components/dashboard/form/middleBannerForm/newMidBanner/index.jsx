@@ -29,7 +29,7 @@ const NewMidBanner = () => {
             console.log('data send ok')
             alert('banner added')
         })
-        .catch(err => console.error('this is post error => ',err))
+        .catch(err => console.error('this is error in add new banner => ',err))
     }
 
 
@@ -40,15 +40,15 @@ const NewMidBanner = () => {
             <form onKeyDown={formKeyNotSuber} onSubmit={submiter} className="flex flex-col gap-8 w-full bg-gray-300 py-5 px-2">
                 <div className="w-full flex flex-col gap-1">
                     <label htmlFor="imgAddress">آدرس عکس</label>
-                    <input ref={imageUrlRef} type="text" name="imgAddress"  className="outline-none p-1 focus:border border-gray-700 "/>
+                    <input ref={imageUrlRef} type="text" name="imgAddress" required={true}  className="outline-none p-1 focus:border text-left border-gray-700 "/>
                 </div>
                 <div className="w-full flex flex-col gap-1">
                     <label htmlFor="imgAlt">آلت عکس</label>
-                    <input ref={imageAltRef} type="text" name="imgAlt"  className="outline-none p-1 focus:border border-gray-700"/>
+                    <input ref={imageAltRef} type="text" name="imgAlt" required={true}  className="outline-none p-1 focus:border text-left border-gray-700"/>
                 </div>
                 <div className="w-full flex flex-col gap-1">
                     <label htmlFor="imgLink">لینک عکس</label>
-                    <input ref={imageLinkRef} type="text" name="imgLink" className="outline-none p-1 focus:border border-gray-700"/>
+                    <input ref={imageLinkRef} type="text" name="imgLink" required={true} className="outline-none p-1 focus:border text-left border-gray-700"/>
                 </div>
                 <div className="w-fit flex flex-col gap-1">
                     <label htmlFor="imageSituation">وضعیت عکس</label>

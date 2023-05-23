@@ -17,8 +17,8 @@ const MiddleBannerForm = () => {
     return (
         <div className="w-full flex flex-col gap-10">
             <div className="flex gap-3">
-                <button onClick={() => setDet(<AllMidBanners setCtrlId={setMidBanDetCtrl}/>)} className="px-2 py-1 text-white bg-[#4F50EC] rounded-sm transition-all hover:bg-[#4F40EC]">همه</button>
-                <button onClick={() => setDet(<NewMidBanner/>)} className="px-2 py-1 text-white bg-[#4F50EC] rounded-sm transition-all hover:bg-[#4F40EC]">بنر جدید</button>
+                <button onClick={() => setDet(<AllMidBanners setCtrlId={setMidBanDetCtrl}/>)} className="px-2 py-1 text-white bg-[#4F50EC] rounded-sm transition-all hover:bg-[#4F20EC]">همه</button>
+                <button onClick={() => setDet(<NewMidBanner/>)} className="px-2 py-1 text-white bg-[#4F50EC] rounded-sm transition-all hover:bg-[#4F20EC]">بنر جدید</button>
             </div>
             <section>
                 {det}

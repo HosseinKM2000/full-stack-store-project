@@ -77,15 +77,15 @@ const MidBannerDetails = ({keyId}) => {
             <form onKeyDown={formKeyNotSuber} onSubmit={updater} className="flex flex-col gap-8 w-full bg-gray-300 py-5 px-2">
                 <div className="w-full flex flex-col gap-1">
                     <label htmlFor="imgAddress">آدرس جدید عکس</label>
-                    <input defaultValue={defaultData.imageUrl} ref={imageUrlRef} type="text" name="imgAddress"  className="outline-none p-1 focus:border border-gray-700 "/>
+                    <input defaultValue={defaultData.imageUrl} required={true} ref={imageUrlRef} type="text" name="imgAddress"  className="outline-none p-1 text-left focus:border border-gray-700 "/>
                 </div>
                 <div className="w-full flex flex-col gap-1">
                     <label htmlFor="imgAlt">آلت جدید عکس</label>
-                    <input defaultValue={defaultData.imageAlt} ref={imageAltRef} type="text" name="imgAlt"  className="outline-none p-1 focus:border border-gray-700"/>
+                    <input defaultValue={defaultData.imageAlt} required={true} ref={imageAltRef} type="text" name="imgAlt"  className="outline-none p-1 text-left focus:border border-gray-700"/>
                 </div>
                 <div className="w-full flex flex-col gap-1">
                     <label htmlFor="imgLink">لینک جدید عکس</label>
-                    <input defaultValue={defaultData.imageLink} ref={imageLinkRef} type="text" name="imgLink" className="outline-none p-1 focus:border border-gray-700"/>
+                    <input defaultValue={defaultData.imageLink} required={true} ref={imageLinkRef} type="text" name="imgLink" className="outline-none p-1 text-left focus:border border-gray-700"/>
                 </div>
                 <div className="w-fit flex flex-col gap-1">
                     <label htmlFor="imageSituation">وضعیت جدید عکس</label>

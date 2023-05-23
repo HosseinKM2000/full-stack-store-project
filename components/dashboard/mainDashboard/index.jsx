@@ -21,7 +21,7 @@ const MainDashboard = () => {
     return (
         <div className="flex w-full">
             <DashboardCtrl setContent={setContent} content={content}/>
-            <div className='w-[80%] p-5'>
+            <div className='w-[80%] p-5 min-h-screen'>
                 {details}
             </div>
         </div>
