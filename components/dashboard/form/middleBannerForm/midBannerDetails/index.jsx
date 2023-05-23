@@ -24,19 +24,23 @@ const MidBannerDetails = ({keyId}) => {
             imageAlt:imageAltRef.current.value,
             situation:imageSituationRef.current.value,
             link:imageLinkRef.current.value,
+            date:new Date().toLocaleDateString('fa-IR',{hour:'2-digit',minute:'2-digit'})
         }
-        const url = 'https://shoping-file.iran.liara.run/api/update-middle-banner';
+        const url = `https://shoping-file.iran.liara.run/api/update-middle-banner/${keyId}`;
         axios.post(url,formData)
-        .then(res => console.log('data send ok'))
+        .then(res => alert('banner updated'))
         .catch(err => console.error('this is error in update mid banner => ',err))
     }
 
     const remover = () => {
-        const formData = {
-            goalId: keyId,
-        } 
-        const url = 'https://shoping-file.iran.liara.run/api/delete-middle-banner';
-        axios.post(url,formData) 
+        // form data will need for hard way delete in server
+        // const formData = {
+        //     goalId: keyId,
+        // } 
+        const url = `https://shoping-file.iran.liara.run/api/delete-middle-banner/${keyId}`;
+        axios.post(url,
+            // formData
+            ) 
         .then(res => {
             console.log('goal mid banner delete successfully')
             setDeleteStatus(true);
