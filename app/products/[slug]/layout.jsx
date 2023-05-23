@@ -31,11 +31,11 @@ const ProductLayout = ({children}) => {
                     </div>
                 </section>
                 <section className="flex flex-col gap-5 p-3 w-full rounded-md shadow-[0px_0px_10px_rgba(0,0,0,0.25)]">
-                    <h3 className="text-gray-900">معرفی کوتاه</h3>
+                    <h3 className="text-gray-500 font-bold">معرفی کوتاه</h3>
                     <p className="line-clamp-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste suscipit praesentium distinctio? Quae expedita inventore obcaecati iure corporis consectetur suscipit recusandae ratione repellat atque. Unde atque voluptatibus ipsa expedita repudiandae!</p>
                 </section>
                 <section className="flex items-start flex-col gap-3 p-3 w-full rounded-md shadow-[0px_0px_10px_rgba(0,0,0,0.25)]">
-                    <h4 className="text-gray-900">برچسب ها</h4>
+                    <h4 className="text-gray-500 font-bold">برچسب ها</h4>
                     <div className="flex justify-start text-sm gap-1 flex-wrap">
                         <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">فایل گرافیکی</span>
                         <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">فایل گرافیکی</span>
@@ -43,6 +43,17 @@ const ProductLayout = ({children}) => {
                         <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">فایل گرافیکی</span>
                         <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">فایل گرافیکی</span>
                         <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">فایل گرافیکی</span>
+                    </div>
+                </section>
+                <section className="flex items-start flex-col gap-3 p-3 w-full rounded-md shadow-[0px_0px_10px_rgba(0,0,0,0.25)]">
+                    <h4 className="text-gray-500 font-bold">دسته بندی ها</h4>
+                    <div className="flex justify-start text-sm gap-1 flex-wrap">
+                        <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">دسته 1</span>
+                        <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">دسته 2</span>
+                        <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">دسته 3</span>
+                        <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">دسته 4</span>
+                        <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">دسته 5</span>
+                        <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">دسته 6</span>
                     </div>
                 </section>
                 <form action="" className="flex flex-col gap-5 p-3 rounded-md shadow-[0px_0px_10px_rgba(0,0,0,0.25)]">

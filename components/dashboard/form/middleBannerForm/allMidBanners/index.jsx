@@ -5,9 +5,11 @@ import BoxBanner from "./box";
 import Image from "next/image";
 
 const AllMidBanners = ({setCtrlId}) => {
+    
     const [banners,setBanners] = useState([-1]);
+    const [filteredBtn,setFilteredBtn] =  useState([-1]);
     const [pageNumber,setPageNumber] = useState(1);
-    const [numberOfBtn,setNumberOfBtn] = useState([1]);
+    const [numberOfBtn,setNumberOfBtn] = useState([-1]);
     const [totalBanners,setTotalBanners] = useState(null);
     const numSync = 10
     const goTopCtrl = () => {
@@ -16,6 +18,8 @@ const AllMidBanners = ({setCtrlId}) => {
         behavior: "smooth",
              });
           }; 
+
+
 
     useEffect(()=>{
         axios.get(`https://shoping-file.iran.liara.run/api/middle-banners?pn=${pageNumber}&num=${numSync}`)
@@ -26,6 +30,26 @@ const AllMidBanners = ({setCtrlId}) => {
         })
         .catch(err => console.error('this is error in get all banners =>',err))
     },[pageNumber])
+
+    useEffect(()=> {
+        if(numberOfBtn[0] !== -1 && numberOfBtn.length > 0)
+        {
+            const arr = [];
+            numberOfBtn.map(number => {
+                if(number === 0 || (number < pageNumber + 1 && number > pageNumber - 3) || number === numberOfBtn.length - 1)
+                {
+                    arr.push(number)
+                }
+            });
+            setFilteredBtn(arr)
+        }
+        else if(numberOfBtn.length === 0)
+        {
+            setFilteredBtn([])
+        }
+    },[numberOfBtn])
+
+
 
     return (
         <section className="w-full flex flex-col items-start">
@@ -51,11 +75,11 @@ const AllMidBanners = ({setCtrlId}) => {
           </div>
           <div className="w-full flex justify-center gap-3 mt-10">
             {
-                banners[0] === -1
+                filteredBtn[0] === -1
                 ? <></>
-                : banners.length < 1
+                : filteredBtn.length < 1
                 ? <></>
-                : numberOfBtn.map((number,index) => (
+                : filteredBtn.map((number,index) => (
                     <>
                      <button key={index} className="py-1 px-3 transition-all hover:bg-orange-600 duration-300 bg-cyan-600 text-white rounded-md" onClick={()=>{
                         setPageNumber(number+1);
@@ -65,7 +89,7 @@ const AllMidBanners = ({setCtrlId}) => {
                         {number+1}
                      </button>
                     </>
-                ))
+                )) 
             }
           </div>
         </section>

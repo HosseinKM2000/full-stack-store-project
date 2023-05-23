@@ -48,7 +48,8 @@ const MidBannerDetails = ({keyId}) => {
         imageUrl:'',
         imageAlt:'',
         imageLink:'',
-        imageSituation:true
+        imageSituation:true,
+        imageDate:'',
     })
 
     useEffect(() => {
@@ -59,7 +60,8 @@ const MidBannerDetails = ({keyId}) => {
                     imageUrl: res.data.image,
                     imageAlt: res.data.imageAlt,
                     imageLink: res.data.link,
-                    imageSituation: res.data.situation
+                    imageSituation: res.data.situation,
+                    imageDate: res.data.date
             })
         })
         .catch(err => console.error('error in get one mid banner =>',err))
@@ -102,6 +104,10 @@ const MidBannerDetails = ({keyId}) => {
                             </>
                         }
                     </select>
+                </div>
+                <div className="flex flex-col gap-1">
+                    <span>تاریخ و زمان ایجاد</span>
+                    <span className="bg-stone-400 border border-white rounded-sm text-white px-2 py-1 w-fit">{defaultData.imageDate}</span>
                 </div>
                 <div className="w-full flex justify-between">
                  <button type="submit" className="text-white bg-orange-500 rounded-md px-5 py-1 w-fit transition-all hover:bg-orange-600">ثبت تغییرات</button>

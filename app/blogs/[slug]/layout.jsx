@@ -67,6 +67,17 @@ const BlogLayout = ({children}) => {
                         </Link>
                     </ul>
                 </section>
+                <section className="flex items-start flex-col gap-3 p-3 w-full rounded-md shadow-[0px_0px_10px_rgba(0,0,0,0.25)]">
+                    <h4 className="text-gray-500 font-bold">برچسب ها</h4>
+                    <div className="flex justify-start text-sm gap-1 flex-wrap">
+                        <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">برچسب</span>
+                        <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">برچسب</span>
+                        <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">برچسب</span>
+                        <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">برچسب</span>
+                        <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">برچسب</span>
+                        <span className="p-1 bg-gray-200 rounded-md cursor-pointer transition-all duration-300 hover:bg-gray-300">برچسب</span>
+                    </div>
+                </section>
                 <form action="" className="flex flex-col gap-5 p-3 rounded-md shadow-[0px_0px_10px_rgba(0,0,0,0.25)]">
                     <label htmlFor="email" className="text-blue-500 font-bold">شرکت در خبر نامه</label>
                     <div className="w-full h-11 bg-white justify-end  items-center relative flex articles_saerch_box">
